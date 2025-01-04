@@ -1,0 +1,9 @@
+spring:
+  server:
+    port: 8080
+
+log:
+  file:
+    path: src/main/resources/logs/application.log
+kafka:
+  bootstrap-servers: localhost:9092

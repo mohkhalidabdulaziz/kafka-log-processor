@@ -1,0 +1,6 @@
+2025-01-05 10:00:00 INFO  Starting application...
+2025-01-05 10:01:00 ERROR Connection to the database failed.
+2025-01-05 10:02:00 WARN  Memory usage is high.
+2025-01-05 10:03:00 INFO  Application initialized successfully.
+2025-01-05 10:04:00 ERROR Failed to process user request.
+2025-01-05 10:05:00 INFO  User login successful.
