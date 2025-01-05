@@ -1,9 +1,35 @@
 spring:
   server:
     port: 8080
+  application:
+    name: Log-Processor
+  datasource:
+    url: jdbc:h2:mem:logsdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
 
 log:
   file:
     path: src/main/resources/logs/application.log
+
 kafka:
   bootstrap-servers: localhost:9092
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
